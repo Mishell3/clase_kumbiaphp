@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title><?php echo $titulo ?></title>
+</head>
+<body>
+<nav>
+ <ul>
+   <li><a href="http://localhost:8081/kumbia/alumno">Alumnos</a></li>
+   <li><a href="http://localhost:8081/kumbia/alumno/registro">Registro</a></li>
+   <li><a href="http://localhost:8081/kumbia/profesores">Profesores</a></li>
+   <li><a href="http://localhost:8081/kumbia/profesores/historial">Historial</a></li>
+ </ul>
+</nav>
+<divc class="container">
+    <?php View::partial('fecha') ?>
+    <?php View::content() ?>
+</div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col 6">
+  <?php echo Html::img('pato.jpg','patito', 'class="responsive-img" src="cool_pic.jpg"')?> 
+  </div>
+  <div class="col s6">
+        <?php
+           $opciones=array(
+               'Masculino'=> 'M'
+               'Femenino'=> 'F'
+            );  
+            echo Html::lists($opciones, $type='ol'); 
+        ?>
+  </div>
+</div>
